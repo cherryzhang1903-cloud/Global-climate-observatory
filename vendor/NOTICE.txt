@@ -1,0 +1,6 @@
+ECharts is distributed under the Apache License 2.0.
+https://github.com/apache/echarts/blob/master/LICENSE
+
+Natural Earth 1:110m Admin 0 Countries dataset is public domain.
+Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson
+https://www.naturalearthdata.com/about/terms-of-use/
