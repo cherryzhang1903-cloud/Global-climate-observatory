@@ -8,6 +8,14 @@
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
 
+## 安装 V4 Skill（跨电脑使用）
+
+[下载 V4 Skill 安装包 ZIP（约 7.74 MB）](./downloads/global-climate-observatory-v4-skill.zip)
+
+把压缩包下载到目标电脑，交给 Codex 并说“安装这个 Skill”。也可以解压后，将整个 `global-climate-observatory` 文件夹放入目标电脑的 `~/.codex/skills/`（配置 CODEX_HOME 时使用该目录下的 skills）。如已有同名旧版，请先备份旧文件夹；自带安装脚本不会覆盖已有安装。
+
+安装后重启 Codex 或新开会话，调用 `$global-climate-observatory`，即可打开 V4、查看站点气象与太阳辐照报告。包内包含可本地启动的网站、12,967 个站点目录、V3 汇总 Excel、V4 报告源码及安装/启动/导出脚本；不包含账号凭据、Node 依赖或全年小时数据缓存。在线 Meteostat 气象数据与 NASA POWER 辐照数据仍需联网读取。查看已构建的本地网站需要 Python 3 与现代浏览器，修改并构建源码才需要 Node.js。
+
 ## V4 更新：全年太阳辐照分析
 
 [打开 V4 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v4/index.html) · [吐鲁番 V4 报告示例](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/report/index.html?station=51573&scheme=4)
