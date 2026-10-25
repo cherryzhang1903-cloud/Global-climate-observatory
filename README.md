@@ -1,4 +1,4 @@
-# 全球气候观测 · Global Climate Observatory V4
+# 全球气候观测 · Global Climate Observatory V5
 
 全球 12,967 个气象站点的 2025 年干热、湿热风险地图与全年气象分析报告。
 
@@ -7,6 +7,18 @@
 
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
+
+## V5 更新：紫外辐照总量（UVA＋UVB）
+
+[打开 V5 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v5/index.html) · [吐鲁番 V5 报告示例](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/report/index.html?station=51573&scheme=5) · [下载 V5 Skill 安装包](./downloads/global-climate-observatory-v5-skill.zip)
+
+V5 新增紫外辐照总量分析，使用 NASA POWER 的 ALLSKY_SFC_UVA（315–400 nm）与 ALLSKY_SFC_UVB（280–315 nm）在同一小时的能量之和。任一分量缺失时，该小时总量为空；不把缺失分量当零，不用固定比例从太阳总辐照量推算。
+
+紫外部分只展示全年累计、月度图表、月度明细与完整度；导出 CSV 仅包含月度和全年汇总。累计单位统一 **MJ/㎡**。后台按 UTC 读取两项数据并转换站点当地 IANA 时区，再汇总月份和全年；不完整月份/年份不显示完整累计，另列有效小时累计。不展示紫外线指数。
+
+原有太阳总短波辐照与温湿度报告保留，首页风险分、分类和极寒标记不重算。NASA 数据仍是站点经纬度对应的网格估计，不是站点辐射仪实测。吐鲁番测试响应中，2025 年共有 8,760 个联合有效小时，UVA＋UVB 全年累计约 335.5 MJ/㎡；后续上游修订可能改变结果。
+
+V5 Skill 安装方式与下方 V4 说明相同，包含最新 V5 网站与报告源码，联网按需读取数据；已有同名旧 Skill 时先备份再更新。V3、V4 与其既有下载继续保留。
 
 ## 安装 V4 Skill（跨电脑使用）
 
