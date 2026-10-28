@@ -15,6 +15,9 @@ z0–6共5461张瓦片，包括透明空瓦片，部署至Cloudflare静态资产
 ```powershell
 python tools/build_population2026_tiles.py --source C:/path/worldpop-2026.tif --density C:/path/density-2026.tif --assets ./public
 Copy-Item _headers.template public/_headers
+$catalogHash=(Get-FileHash ../v9/home-stations.json -Algorithm SHA256).Hash.Substring(0,12).ToLowerInvariant()
+New-Item -ItemType Directory public/catalog -Force
+Copy-Item ../v9/home-stations.json "public/catalog/stations-2025-$catalogHash.json"
 npx wrangler deploy
 ```
 
