@@ -1,5 +1,5 @@
 export const modes={combined:{climate:true,population:true},climate:{climate:true,population:false},population:{climate:false,population:true}};
-export function stationFeatures(rows,color){return {type:'FeatureCollection',features:rows.filter(s=>Number.isFinite(s.lon)&&Number.isFinite(s.lat)&&Math.abs(s.lat)<=90&&Math.abs(s.lon)<=180).map(s=>({type:'Feature',geometry:{type:'Point',coordinates:[s.lon,s.lat]},properties:{id:s.id,icon:s.shape+'-'+color(s),city:s.city}}))};}
+export function stationFeatures(rows,color){return {type:'FeatureCollection',features:rows.filter(s=>Number.isFinite(s.lon)&&Number.isFinite(s.lat)&&Math.abs(s.lat)<=90&&Math.abs(s.lon)<=180).map(s=>({type:'Feature',geometry:{type:'Point',coordinates:[s.lon,s.lat]},properties:{id:s.id,icon:s.shape+'-'+color(s),city:s.city,shape:s.shape}}))};}
 export function countryGroup(name){return ['China','Taiwan'].includes(name)?['China','Taiwan']:[name];}
 export function populationURL(config,origin){const local=['localhost','127.0.0.1','[::1]'].includes(new URL(origin).hostname);const raw=(local&&config.localURL)||config.url||'/population/world.pmtiles';const u=new URL(raw,origin);if(!['https:','http:'].includes(u.protocol))throw Error('人口数据地址必须使用HTTP或HTTPS');return u.href;}
 export function populationSource(config,origin){
