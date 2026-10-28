@@ -1,4 +1,4 @@
-import {createDensityMap} from './density-map.mjs';
+import {createDensityMap} from './density-map.mjs?v=20261028-buffer1';
 import {colors,filterStations,decodeStation} from '../logic.mjs';
 const app=document.querySelector('#app');
 let mapMode='population',densityLegend=[];
