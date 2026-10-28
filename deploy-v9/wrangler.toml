@@ -1,0 +1,4 @@
+name = "global-climate-population-v9"
+main = "worker.mjs"
+compatibility_date = "2026-10-28"
+workers_dev = true

@@ -1,4 +1,4 @@
-# 全球气候观测 · Global Climate Observatory V8
+# 全球气候观测 · Global Climate Observatory V9
 
 全球 12,967 个气象站点的 2025 年干热、湿热风险地图与全年气象分析报告。
 
@@ -7,6 +7,20 @@
 
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
+
+## V9 更新：基于V5的统一人口与气候地图
+
+[打开 V9 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v9/index.html)
+
+V9基于V5，保留12967站2025年风险分、30/60分分类、极寒蓝色标记、风险散点、筛选及全年报告。人口栅格和气候站点由同一个MapLibre WebGL地图绘制，不再使用嵌入网页同步视图；提供气候＋人口、仅气候、仅人口，以及人口透明度控制。搜索/风险筛选仅影响气候站点，人口保持原始空间分布。
+
+人口为原Luminocity3D图的GHSL **2020年人口密度（人/km²）**，沿用16档非线性色带，单位和年份与2025年气候数据分开标注。原预着色栅格不能反算精确人口值，白色区域不能直接判为零人口；没有将站点或Excel城市人口画成人口格网。制图D A Smith / CASA UCL；人口数据EC JRC & CIESIN。
+
+技术采用MapLibre GL JS 5.6.2＋PMTiles 4.4.0。人口档案按视野进行HTTP Range请求，通过用户Cloudflare账号部署的固定源Worker提供CORS；约10GB原始档案未进入Git仓库。新瓦片到达仍取决于上游、Cloudflare和网络，不承诺所有网络环境更快。数据源不可用时明确报错，可切换仅气候。
+
+站点报告为独立report-v9，Meteostat时间转换为站点IANA当地时间并保留夏令时；太阳辐照及仅月度/全年UVA＋UVB分析继续使用NASA POWER，累计MJ/㎡。不改变原风险评分。原版本V3–V8入口保留。
+
+[V9使用与来源说明](./v9/README.md) · [人口转发部署源码](./deploy-v9/worker.mjs)
 
 ## V8 更新：原站人口密度细网格底图
 

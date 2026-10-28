@@ -1,0 +1,8 @@
+{
+  "url": "https://global-climate-population-v9.cherry-zhang1903.workers.dev/population/world.pmtiles",
+  "localURL": "/population/world.pmtiles",
+  "year": 2020,
+  "unit": "人/km²",
+  "source": "Luminocity3D · D A Smith / CASA UCL · GHSL / EC JRC & CIESIN",
+  "note": "线上使用Cloudflare固定源Range服务；localhost/127.0.0.1使用start_v9.py。本图为预渲染色带，不能通过颜色查询精确人口值。"
+}
