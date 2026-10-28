@@ -1,0 +1,10 @@
+/tiles/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: Content-Length, ETag
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp
+
+/transparent.webp
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/webp

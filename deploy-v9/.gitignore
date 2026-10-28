@@ -2,3 +2,6 @@
 .dev.vars*
 .env*
 node_modules/
+public/
+*.tif
+*.part

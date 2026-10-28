@@ -37,7 +37,10 @@
   "timeBasis": "station IANA local time, including DST",
   "localHourlyFallback": false,
   "baseVersion": "V5",
-  "populationYear": 2020,
-  "populationFormat": "raster PMTiles",
+  "populationYear": 2026,
+  "populationFormat": "cached raster XYZ WebP",
+  "populationRelease": "WorldPop Global2 R2025A v1",
+  "populationModelled": true,
+  "populationNativeResolution": "30 arcseconds (~1km at equator)",
   "mapEngine": "MapLibre GL JS"
 }

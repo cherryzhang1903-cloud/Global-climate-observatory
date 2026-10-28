@@ -1,8 +1,16 @@
 {
-  "url": "https://global-climate-population-v9.cherry-zhang1903.workers.dev/population/world.pmtiles",
-  "localURL": "/population/world.pmtiles",
-  "year": 2020,
+  "type": "xyz",
+  "tiles": ["https://global-climate-population-v9.cherry-zhang1903.workers.dev/tiles/worldpop-2026-r2025a/{z}/{x}/{y}.webp"],
+  "localTiles": ["/tiles/worldpop-2026-r2025a/{z}/{x}/{y}.webp"],
+  "tileSize": 1024,
+  "minzoom": 0,
+  "maxzoom": 6,
+  "bounds": [-180, -60, 180, 84],
+  "year": 2026,
   "unit": "人/km²",
-  "source": "Luminocity3D · D A Smith / CASA UCL · GHSL / EC JRC & CIESIN",
-  "note": "线上使用Cloudflare固定源Range服务；localhost/127.0.0.1使用start_v9.py。本图为预渲染色带，不能通过颜色查询精确人口值。"
+  "source": "WorldPop / University of Southampton · Global2 R2025A v1 · CC BY 4.0",
+  "sourceURL": "https://hub.worldpop.org/geodata/summary?id=80032",
+  "modelled": true,
+  "nativeResolution": "30角秒，赤道附近约1公里；放大不增加原始精度",
+  "note": "2026年人口模型估计（含外推），不是逐户普查实测。每格人数按纬度相关真实网格面积换算为人/km²；预渲染显示瓦片，不提供精确数值查询。"
 }

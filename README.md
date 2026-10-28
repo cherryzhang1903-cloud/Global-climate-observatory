@@ -8,19 +8,19 @@
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
 
-## V9 更新：基于V5的统一人口与气候地图
+## V9 更新：人口加载优化与2026模型格网
 
-[打开 V9 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v9/index.html)
+[打开V9网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v9/index.html)
 
-V9基于V5，保留12967站2025年风险分、30/60分分类、极寒蓝色标记、风险散点、筛选及全年报告。人口栅格和气候站点由同一个MapLibre WebGL地图绘制，不再使用嵌入网页同步视图；提供气候＋人口、仅气候、仅人口，以及人口透明度控制。搜索/风险筛选仅影响气候站点，人口保持原始空间分布。
+V9基于V5，保留12967站2025年风险分、30/60分类、极寒蓝色与全年报告。人口栅格和气候站点共用MapLibre地图，支持气候＋人口、仅气候、仅人口及透明度。
 
-人口为原Luminocity3D图的GHSL **2020年人口密度（人/km²）**，沿用16档非线性色带，单位和年份与2025年气候数据分开标注。原预着色栅格不能反算精确人口值，白色区域不能直接判为零人口；没有将站点或Excel城市人口画成人口格网。制图D A Smith / CASA UCL；人口数据EC JRC & CIESIN。
+人口已从GHSL2020更新为[WorldPop Global2 R2025A v1的2026年人口模型估计（含外推）](https://hub.worldpop.org/geodata/summary?id=80032)，不是2026人口普查实测。原生30角秒、赤道附近约1公里；放大不会增加原始精度。官方人数/格按纬度相关格网面积换算为人/km²，缩小时属于显示概化，空白不直接判零；不通过色块反算人口总量。署名WorldPop / University of Southampton，CC BY4.0，DOI10.5258/SOTON/WP00845。
 
-技术采用MapLibre GL JS 5.6.2＋PMTiles 4.4.0。人口档案按视野进行HTTP Range请求，通过用户Cloudflare账号部署的固定源Worker提供CORS；约10GB原始档案未进入Git仓库。新瓦片到达仍取决于上游、Cloudflare和网络，不承诺所有网络环境更快。数据源不可用时明确报错，可切换仅气候。
+加载改为预生成静态XYZ无损WebP瓦片，Cloudflare直接提供文件与长缓存，避免每位访客反复读取旧PMTiles文件头、目录及上游字节范围。约1km的2026全球产品与旧图局部100m源分辨率不同，不宣称新图达到100m。完整人口原始文件不在Git仓库；发布清单记录制图口径。旧数据兼容接口另增加按范围缓存，不是当前人口层的默认源。
 
-站点报告为独立report-v9，Meteostat时间转换为站点IANA当地时间并保留夏令时；太阳辐照及仅月度/全年UVA＋UVB分析继续使用NASA POWER，累计MJ/㎡。不改变原风险评分。原版本V3–V8入口保留。
+气候年份仍2025；当地时间、太阳及仅月/年的UVA＋UVB口径保持原样。V3–V8保留。
 
-[V9使用与来源说明](./v9/README.md) · [人口转发部署源码](./deploy-v9/worker.mjs)
+[V9说明](./v9/README.md) · [生成与部署](./deploy-v9/README.md) · [数据清单](./deploy-v9/population-manifest.json)
 
 ## V8 更新：原站人口密度细网格底图
 
