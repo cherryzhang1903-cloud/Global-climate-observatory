@@ -1,12 +1,21 @@
-# 全球气候观测 · Global Climate Observatory V9
+# 全球气候观测 · Global Climate Observatory V9.1
 
 全球 12,967 个气象站点的 2025 年干热、湿热风险地图与全年气象分析报告。
 
+- [打开最新 V9.1 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v9.1/index.html)
 - [打开 V3 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v3/index.html)
 - [下载 V3 Excel 汇总（2025）](./downloads/Global-climate-observatory-V3-summary-2025.xlsx)
 
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
+
+## V9.1 更新：主要经纬网与报告固定返回按钮
+
+首页地图改为30°主要经纬网，经线每30°一条，纬线标注赤道、南北纬30°和60°，赤道与本初子午线加深显示。经纬线与度数标签随缩放、拖动和旋转同步；移除鼠标所在位置的经纬度读数，保留气象站点提示中的固定经纬度。
+
+站点全年气候报告右侧固定“返回主页”按钮，电脑位于右侧居中、手机位于右下角，滚动到报告任何位置均可直接返回V9.1主页，打印时隐藏。保留全年太阳和UVA＋UVB紫外辐照概览及原有气象分析。手机干湿热明细表支持表内横向滚动，避免撑宽整页。
+
+[打开V9.1网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v9.1/index.html) · [V9.1说明](./v9.1/README.md)
 
 ## V9 更新：人口加载优化与2026模型格网
 
