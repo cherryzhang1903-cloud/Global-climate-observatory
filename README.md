@@ -1,13 +1,27 @@
-# 全球气候观测 · Global Climate Observatory V9.1
+# 全球气候观测 · Global Climate Observatory V10
 
 全球 12,967 个气象站点的 2025 年干热、湿热风险地图与全年气象分析报告。
 
-- [打开最新 V9.1 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v9.1/index.html)
+- [打开最新 V10 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v10/index.html)
 - [打开 V3 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v3/index.html)
 - [下载 V3 Excel 汇总（2025）](./downloads/Global-climate-observatory-V3-summary-2025.xlsx)
 
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
+
+## V10 更新：中国进出口参考航线独立图层
+
+新增“中国进出口航运”地图模式，切入时隐藏气候与人口图层，并提供独立的0%–100%透明度调节。透明度为0时港口、航线及其点击命中同时隐藏；切回气候与人口模式保留原有数据与功能。
+
+地图仅显示16条中国港口与海外港口之间的参考联通航线，及76个来源目录中的中国港口和10个示例海外港口，不绘制完整全球海路网。可点击航线查看完整起止港口、海里/公里距离、已标注海峡和运河，以及按可调船速估算的纯航行小时/天数。也可检索其他海外港口，查询要求一端为中国港口、一端为海外港口，支持进出口双向查询；自定义海外端点仅随当前查询显示。
+
+港口目录为[NGA World Port Index](https://msi.nga.mil/Publications/WPI)公开快照（2026-10-30取得，共3,807条），海路依据[Eurostat SeaRoute / Marnet](https://github.com/eurostat/searoute)20km简化参考海网计算，保留EUPL-1.2许可与转换源文件。中国港口识别包含来源字段China、Hong Kong、Taiwan、Macau/Macao，原始港口属性仍保留来源记录。
+
+默认船速16节，可调5–40节；小时＝网络公里距离÷1.852÷船速，天数＝小时÷24。港口至海网节点的虚线为未验证可通航的接入示意，不计入网络距离和时间。时间不含等泊、装卸、中转、运河排队、天气和船型影响；参考航线不是实际贸易量、班轮班期、实时AIS轨迹或到港承诺。默认避开西北和东北极地航道。
+
+保留V9.1的主要经纬网、站点经纬度、报告右侧固定返回按钮、全年太阳及UVA＋UVB辐照概览，气候年份仍为2025。
+
+[打开V10网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v10/index.html) · [V10说明](./v10/README.md) · [港航数据来源与口径](./v10/maritime-data/SOURCES.md)
 
 ## V9.1 更新：主要经纬网与报告固定返回按钮
 
