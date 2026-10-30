@@ -1,0 +1,5 @@
+name = "global-climate-weather"
+main = "worker.mjs"
+compatibility_date = "2026-10-30"
+workers_dev = true
+account_id = "0486888e4a9adf7e40a5af239548f003"
