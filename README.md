@@ -1,13 +1,23 @@
-# 全球气候观测 · Global Climate Observatory V11
+# 全球气候观测 · Global Climate Observatory V11.1
 
 全球 12,967 个气象站点的 2025 年干热、湿热风险地图与全年气象分析报告。
 
-- [打开最新 V11 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v11/index.html)
+- [打开最新 V11.1 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v11.1/index.html)
 - [打开 V3 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v3/index.html)
 - [下载 V3 Excel 汇总（2025）](./downloads/Global-climate-observatory-V3-summary-2025.xlsx)
 
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
+
+## V11.1 更新：站点对比响应与紧凑报告
+
+站点搜索改用预建文本索引，精确代码优先、最多20个结果；搜索目录约1.25MB，报告目录约3.53MB，避免各层重复读取约9.50MB的完整地图目录。当前站点报告保持实例和设置；图表滚动到章节附近时才生成，全年气象记录不采样删减。导出和打印前补齐全部章节。
+
+本机同一组站点、相同缓存条件的对照测试：添加第二站到概览可见约从4.39秒降到0.32秒，最大连续主线程任务约从1.89秒降到0.11秒；单站初始页面元素约从2.2万降到273个。测量不是所有电脑或网络的时效承诺，官方数据下载仍受网络和服务可用性影响。
+
+报告标题与站点对比按钮同排，取消顶部返回风险分布和主题按钮，保留右侧固定返回主页。在线数据、时区、模型标记与许可说明放到每份报告最后。删除湿热和干热等级明细表，保留分级规则、统计与分布图。电脑双栏、手机上下排列；原V11及Meteostat官方源中转保留。
+
+[打开V11.1](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v11.1/index.html) · [V11.1说明](./v11.1/README.md)
 
 ## V11 更新：同页展示两个站点的完整报告
 
