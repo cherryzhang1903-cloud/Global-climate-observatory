@@ -1,0 +1,52 @@
+{
+  "source": "Meteostat_12967站点_干湿分类与环境风险评分_2025_国家修正版.xlsx",
+  "sheet": "修订_全站点明细",
+  "year": 2025,
+  "total": 12967,
+  "countries": 217,
+  "continents": 8,
+  "scatterCount": 12967,
+  "mapCount": 12967,
+  "missingRisk": 0,
+  "excluded": 33,
+  "exclusionReasons": {
+    "缺少年降水量": 31,
+    "联合覆盖率不足95%": 2
+  },
+  "highRisk": 859,
+  "reportReady": 12967,
+  "pendingReport": 0,
+  "categories": {
+    "干湿混合型": 3418,
+    "干热主导型": 789,
+    "湿热主导型": 1426,
+    "低热暴露型": 7334
+  },
+  "levels": {
+    "5": 37,
+    "4": 822,
+    "3": 1843,
+    "2": 4360,
+    "1": 5905
+  },
+  "sourceSha256": "eff816c6cd4da487becc3e47496073eb9b0e25d4d8c6fe3c1bc36f27ccb32eae",
+  "scheme": 3,
+  "geographicCorrection": "06659: Switzerland/瑞士 (CH), Europe/欧洲",
+  "version": "V11",
+  "hourlySource": "Meteostat online annual dumps",
+  "timeBasis": "station IANA local time, including DST",
+  "localHourlyFallback": false,
+  "baseVersion": "V5",
+  "populationYear": 2026,
+  "populationFormat": "cached raster XYZ WebP",
+  "populationRelease": "WorldPop Global2 R2025A v1",
+  "populationModelled": true,
+  "populationNativeResolution": "30 arcseconds (~1km at equator)",
+  "mapEngine": "MapLibre GL JS",
+  "graticuleIntervalDegrees": 30,
+  "maritimeLayer": "independent",
+  "maritimeDuration": "reference-network distance / user-selected speed; estimate only",
+  "maritimeDisplayScope": "China-overseas only",
+  "maritimeReferenceVoyages": 16,
+  "stationComparison": "two independent full V10-style reports on one page; no derived differences"
+}

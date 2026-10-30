@@ -1,13 +1,23 @@
-# 全球气候观测 · Global Climate Observatory V10
+# 全球气候观测 · Global Climate Observatory V11
 
 全球 12,967 个气象站点的 2025 年干热、湿热风险地图与全年气象分析报告。
 
-- [打开最新 V10 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v10/index.html)
+- [打开最新 V11 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v11/index.html)
 - [打开 V3 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v3/index.html)
 - [下载 V3 Excel 汇总（2025）](./downloads/Global-climate-observatory-V3-summary-2025.xlsx)
 
 本说明记录本项目实际使用的分类方法。它是用于站点比较与环境暴露筛选的项目规则，不是通用气候区划标准，也不是人体健康或材料寿命预测模型。
 
+
+## V11 更新：同页展示两个站点的完整报告
+
+V11 以 V10 为基础。进入任意站点报告后，点击顶部“站点对比 · 选择其他站点”，按城市、站点代码或国家搜索并选择，即可在同一页面加载另一个站点的完整气象报告。
+
+宽屏电脑左右排列；窄屏和手机上下排列，顶部按钮可直接跳转到当前或对比站点。两份报告各自保留温度、湿度、闷热、干湿热分级、月度统计、每日与小时曲线、气候总结、太阳和紫外 UVA＋UVB 分析，以及各自的阈值、数据重试和导出。更换或取消对比站点不重新加载当前站点，保留当前报告的设置。不生成差值或合并对比图表。
+
+年份仍为 2025，按每个站点自己的 IANA 当地时区分析，缺测不填零。太阳和紫外为 NASA POWER 格网估计，累计单位 MJ/㎡；紫外只显示每月及全年 UVA＋UVB。在线数据依赖 Meteostat 和 NASA 服务，一个站点或来源失败不隐藏另一份报告。V10 的气候、人口、主要经纬网和独立中国进出口航运图层保留，历史版本不变。
+
+[打开 V11 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v11/index.html) · [V11 使用说明](./v11/README.md)
 
 ## V10 更新：中国进出口参考航线独立图层
 
