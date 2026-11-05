@@ -1,0 +1,42 @@
+{
+  "ports": {
+    "count": 3807,
+    "provider": "NGA World Port Index (Pub 150)",
+    "retrieved": "2026-10-30",
+    "source": "https://msi.nga.mil/api/publications/download?key=16920959/SFH00000/UpdatedPub150.csv&type=view",
+    "sourceSHA256": "315644f1e77966291633145fd351c2762b37702d115926b9ed074b39e8e21667",
+    "notes": "Official names and UN/LOCODE values retained; empty/Unknown attributes remain null; non-positive depth values are not interpreted as measured depth."
+  },
+  "network": {
+    "provider": "Eurostat SeaRoute / Marnet",
+    "sourceCommit": "88a2e568a8e0144d1f5a81c3931a7bc2bcce6901",
+    "license": "EUPL-1.2",
+    "nodes": 16219,
+    "edges": 31758,
+    "source": "https://raw.githubusercontent.com/eurostat/searoute/88a2e568a8e0144d1f5a81c3931a7bc2bcce6901/modules/core/src/main/resources/marnet/marnet_plus_20km.gpkg"
+  },
+  "timeEstimate": {
+    "defaultSpeedKnots": 16,
+    "formula": "hours = (network distance km / 1.852) / speed knots",
+    "excludes": [
+      "port-to-network schematic connections",
+      "waiting",
+      "loading/unloading",
+      "canal queues",
+      "weather",
+      "vessel restrictions"
+    ],
+    "defaultBlockedPassages": [
+      "northwest",
+      "northeast"
+    ]
+  },
+  "displayScope": {
+    "type": "China-overseas import/export reference routes only",
+    "referenceVoyages": 16,
+    "chinaPortsInSnapshot": 76,
+    "baselineOverseasPorts": 10,
+    "customPortRule": "exactly one endpoint within China scope; current overseas endpoint only",
+    "globalNetworkRendered": false
+  }
+}

@@ -1,8 +1,17 @@
-# 全球气候观测 · Global Climate Observatory V11.1
+# 全球气候观测 · Global Climate Observatory V12
+
+## V12：ERA5气象报告，NASA辐照（2026-11-05）
+
+[打开V12](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v12/index.html) · [V12数据口径](v12/README.md)
+
+全部12967个站点的详细气象报告改为按坐标在线获取ERA5 0.25°最近网格再分析，年份仍为2025。太阳辐照和UVA＋UVB继续使用NASA POWER。保留两份完整报告同时展示、当地时区、完整小时数据、Canvas散点、滚动优化、返回主页及原地图图层；重复读取可使用有时效的浏览器ERA5缓存。气象失败不回退Meteostat。
+
+首页风险分、气候类型、极寒标记仍为原Excel快照，未按ERA5重算。ERA5不是站点实测，尤其高山、盆地、沿海存在局地代表性差异。四站试点不能证明所有站点精度相同。报告末尾显示实际网格坐标、来源与时区。旧版页面仍保留。
+
 
 全球 12,967 个气象站点的 2025 年干热、湿热风险地图与全年气象分析报告。
 
-- [打开最新 V11.1 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v11.1/index.html)
+- [打开历史 V11.1 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v11.1/index.html)
 - [打开 V3 网站](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v3/index.html)
 - [下载 V3 Excel 汇总（2025）](./downloads/Global-climate-observatory-V3-summary-2025.xlsx)
 
