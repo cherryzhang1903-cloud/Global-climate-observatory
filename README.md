@@ -1,4 +1,11 @@
-# 全球气候观测 · Global Climate Observatory V12
+# 全球气候观测 · Global Climate Observatory V13
+
+## V13：V11基础上的柯本气候图层（2026-11-06）
+
+[打开V13](https://cherryzhang1903-cloud.github.io/Global-climate-observatory/v13/index.html) · [柯本来源与精度](v13/KOPPEN-SOURCES.md)
+
+按用户要求以V11为基础，详细气象报告使用Meteostat，太阳和UVA＋UVB仍为NASA。新增1991—2020柯本—盖格分区，气候站点、人口、柯本三层独立勾选、任意叠加及各自透明度。港航保持独立模式。数据采用Beck et al. (2023)的0.1°概化派生显示栅格，约10km显示精度，不声称原研究1km分辨率，不作为2025年气候结果，不改变原Excel风险分类。栅格瓦片随站点托管；CC BY 4.0，详细来源和处理方法见上方链接。
+
 
 ## V12：ERA5气象报告，NASA辐照（2026-11-05）
 

@@ -1,0 +1,11 @@
+/** Beck et al. 1991–2020 categorical raster, CC BY 4.0. Local nearest-neighbour XYZ. */
+export function addKoppenLayer(map){
+ let visible=false,opacity=.7,ready=false,failed=false;const ctl=new AbortController();
+ const legend=document.getElementById('koppenLegend'),status=document.getElementById('koppenStatus'),slider=document.getElementById('koppenOpacity');
+ const names=['','热带雨林','热带季风','热带草原','热沙漠','冷沙漠','热半干旱','冷半干旱','地中海热夏','地中海暖夏','地中海冷夏','温带冬干热夏','温带冬干暖夏','温带冬干冷夏','温带湿润热夏','温带海洋暖夏','温带海洋冷夏','寒带夏干热夏','寒带夏干暖夏','寒带夏干冷夏','寒带夏干严冬','寒带冬干热夏','寒带冬干暖夏','寒带冬干冷夏','寒带冬干严冬','寒带湿润热夏','寒带湿润暖夏','寒带湿润冷夏','寒带湿润严冬','苔原','冰原'];
+ fetch('koppen-zones.json',{signal:ctl.signal}).then(r=>{if(!r.ok)throw Error('图例读取失败');return r.json()}).then(zones=>{const root=document.getElementById('koppenClasses');for(const z of Object.values(zones)){const item=document.createElement('span'),swatch=document.createElement('i');swatch.style.cssText=`display:inline-block;width:12px;height:12px;margin-right:4px;background:rgb(${z.rgb.join(',')});border:1px solid #aaa`;item.append(swatch,document.createTextNode(z.code+' '+(names[z.value]||z.name)));item.title=z.name+' — '+z.description;root.append(item)}}).catch(e=>{if(!ctl.signal.aborted)status.textContent=e.message});
+ function sync(){legend.hidden=!visible;slider.disabled=!visible;slider.closest('label').hidden=false;if(ready){map.setLayoutProperty('koppen','visibility',visible?'visible':'none');map.setPaintProperty('koppen','raster-opacity',opacity);}if(visible&&!failed)status.textContent='柯本图层按视野加载 · 分类颜色不代表风险大小';}
+ map.on('load',()=>{map.addSource('koppen',{type:'raster',tiles:[new URL('koppen-tiles/{z}/{x}/{y}.png',location.href).href.replaceAll('%7B','{').replaceAll('%7D','}')],tileSize:256,minzoom:0,maxzoom:4});map.addLayer({id:'koppen',type:'raster',source:'koppen',layout:{visibility:'none'},paint:{'raster-opacity':opacity,'raster-resampling':'nearest','raster-fade-duration':0}},'country-lines');ready=true;sync()});
+ map.on('error',e=>{if(e.sourceId==='koppen'){failed=true;status.textContent='柯本瓦片加载失败，请检查网络后刷新；空白不表示某种气候类型'}});
+ return {setVisible(value){visible=value;sync()},setOpacity(value){opacity=Math.max(0,Math.min(1,value));if(ready)map.setPaintProperty('koppen','raster-opacity',opacity)},dispose(){ctl.abort()}};
+}

@@ -1,0 +1,452 @@
+{
+  "1": {
+    "value": 1,
+    "code": "Af",
+    "rgb": [
+      0,
+      0,
+      255
+    ],
+    "name": "Tropical rainforest",
+    "group": "Tropical",
+    "groupCode": "A",
+    "groupDescription": "Hot year-round",
+    "description": "Hot temperatures in every month with abundant rainfall and no dry season. Forest cover is supported by consistently wet conditions.",
+    "examples": "Amazon basin, Congo basin, Indonesia, Malaysia, southern India"
+  },
+  "2": {
+    "value": 2,
+    "code": "Am",
+    "rgb": [
+      0,
+      120,
+      255
+    ],
+    "name": "Tropical monsoon",
+    "group": "Tropical",
+    "groupCode": "A",
+    "groupDescription": "Hot, monsoon-influenced",
+    "description": "Hot year-round with a short dry season and very heavy seasonal rains. Rainfall is strongly shaped by monsoon circulation.",
+    "examples": "Western India, Bangladesh, coastal Myanmar, southern Vietnam, West Africa"
+  },
+  "3": {
+    "value": 3,
+    "code": "Aw",
+    "rgb": [
+      70,
+      170,
+      250
+    ],
+    "name": "Tropical savanna",
+    "group": "Tropical",
+    "groupCode": "A",
+    "groupDescription": "Hot, dry winter",
+    "description": "Hot in all months with a pronounced winter dry season and a wetter summer. Seasonal rainfall often supports grasslands and open woodland.",
+    "examples": "East Africa, central Brazil, northern Australia, Llanos of Venezuela and Colombia"
+  },
+  "4": {
+    "value": 4,
+    "code": "BWh",
+    "rgb": [
+      255,
+      0,
+      0
+    ],
+    "name": "Hot desert",
+    "group": "Arid",
+    "groupCode": "B",
+    "groupDescription": "Desert, hot",
+    "description": "Annual precipitation is far below the dry-climate threshold, with mean annual temperature above 18 C. Extreme aridity and high heat dominate.",
+    "examples": "Sahara, Arabian Peninsula, central Australia, SW United States"
+  },
+  "5": {
+    "value": 5,
+    "code": "BWk",
+    "rgb": [
+      255,
+      150,
+      150
+    ],
+    "name": "Cold desert",
+    "group": "Arid",
+    "groupCode": "B",
+    "groupDescription": "Desert, cold",
+    "description": "Very low annual precipitation with a mean annual temperature below 18 C. Winters can be cold despite persistently dry conditions.",
+    "examples": "Gobi Desert, Great Basin, Patagonian Desert, Taklamakan Desert"
+  },
+  "6": {
+    "value": 6,
+    "code": "BSh",
+    "rgb": [
+      245,
+      165,
+      0
+    ],
+    "name": "Hot semi-arid",
+    "group": "Arid",
+    "groupCode": "B",
+    "groupDescription": "Steppe, hot",
+    "description": "Dry climate near the desert threshold with mean annual temperature above 18 C. Rainfall is limited but generally enough to support grassland or scrub.",
+    "examples": "Sahel, Deccan Plateau, NE Brazil, northern Mexico, parts of Australia"
+  },
+  "7": {
+    "value": 7,
+    "code": "BSk",
+    "rgb": [
+      255,
+      220,
+      100
+    ],
+    "name": "Cold semi-arid",
+    "group": "Arid",
+    "groupCode": "B",
+    "groupDescription": "Steppe, cold",
+    "description": "Dry steppe climate with mean annual temperature below 18 C. Large seasonal temperature ranges are common.",
+    "examples": "Central Asia, US High Plains, interior Spain, Patagonia, Mongolia"
+  },
+  "8": {
+    "value": 8,
+    "code": "Csa",
+    "rgb": [
+      255,
+      255,
+      0
+    ],
+    "name": "Hot-summer Mediterranean",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "Dry summer, hot summer",
+    "description": "Mild, wetter winters and hot, dry summers. Summer drought is strong and shapes vegetation and water demand.",
+    "examples": "Mediterranean Basin, California valleys, central Chile, SW Australia"
+  },
+  "9": {
+    "value": 9,
+    "code": "Csb",
+    "rgb": [
+      200,
+      200,
+      0
+    ],
+    "name": "Warm-summer Mediterranean",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "Dry summer, warm summer",
+    "description": "Mild, wet winters and warm, dry summers moderated by latitude, elevation, or ocean influence. Summer drought is present but heat is less intense than Csa.",
+    "examples": "Coastal California, Pacific Northwest uplands, northern Portugal, parts of Chile"
+  },
+  "10": {
+    "value": 10,
+    "code": "Csc",
+    "rgb": [
+      150,
+      150,
+      0
+    ],
+    "name": "Cold-summer Mediterranean",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "Dry summer, cold summer",
+    "description": "A rare dry-summer temperate climate with cool summers and mild to cool winters. It usually occurs in exposed coastal or high-elevation settings.",
+    "examples": "Coastal Iceland margins, Faroe Islands uplands, high Andes, small Pacific Northwest areas"
+  },
+  "11": {
+    "value": 11,
+    "code": "Cwa",
+    "rgb": [
+      150,
+      255,
+      150
+    ],
+    "name": "Monsoon-influenced humid subtropical",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "Dry winter, hot summer",
+    "description": "Hot summers, mild winters, and a distinct winter dry season. Most precipitation falls during the warm season.",
+    "examples": "Northern India, southern China interior, northern Vietnam, parts of Paraguay"
+  },
+  "12": {
+    "value": 12,
+    "code": "Cwb",
+    "rgb": [
+      100,
+      200,
+      100
+    ],
+    "name": "Subtropical highland",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "Dry winter, warm summer",
+    "description": "Mild to warm summers, cool winters, and a dry winter season. Elevation commonly moderates temperatures in otherwise tropical or subtropical regions.",
+    "examples": "Ethiopian Highlands, Mexican Plateau, Andes valleys, Yunnan, southern Africa highlands"
+  },
+  "13": {
+    "value": 13,
+    "code": "Cwc",
+    "rgb": [
+      50,
+      150,
+      50
+    ],
+    "name": "Cold subtropical highland",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "Dry winter, cold summer",
+    "description": "Cool summers, cold winters, and a dry winter season. This rare climate is usually confined to high mountain terrain.",
+    "examples": "High Andes, Tibetan Plateau margins, isolated East African highlands"
+  },
+  "14": {
+    "value": 14,
+    "code": "Cfa",
+    "rgb": [
+      200,
+      255,
+      80
+    ],
+    "name": "Humid subtropical",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "No dry season, hot summer",
+    "description": "Hot, humid summers and mild to cool winters with significant precipitation year-round. There is no pronounced dry season.",
+    "examples": "SE United States, eastern China, southern Brazil, eastern Argentina, NE India"
+  },
+  "15": {
+    "value": 15,
+    "code": "Cfb",
+    "rgb": [
+      100,
+      255,
+      80
+    ],
+    "name": "Temperate oceanic",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "No dry season, warm summer",
+    "description": "Mild winters, warm but not hot summers, and rainfall spread through the year. Marine influence often keeps temperature extremes modest.",
+    "examples": "British Isles, western France, New Zealand, southern Chile, Pacific Northwest coast"
+  },
+  "16": {
+    "value": 16,
+    "code": "Cfc",
+    "rgb": [
+      50,
+      200,
+      0
+    ],
+    "name": "Subpolar oceanic",
+    "group": "Temperate",
+    "groupCode": "C",
+    "groupDescription": "No dry season, cold summer",
+    "description": "Cool summers, mild to cold winters, and frequent precipitation in all seasons. It is common on high-latitude coasts exposed to ocean air.",
+    "examples": "Faroe Islands, coastal Iceland, southern Alaska coast, Tierra del Fuego"
+  },
+  "17": {
+    "value": 17,
+    "code": "Dsa",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "name": "Hot-summer continental Mediterranean",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry summer, hot summer",
+    "description": "Hot, dry summers and cold winters with a strong continental temperature range. It is usually found inland from Mediterranean regions.",
+    "examples": "Interior Turkey, Iranian Plateau, inland western United States, parts of Central Asia"
+  },
+  "18": {
+    "value": 18,
+    "code": "Dsb",
+    "rgb": [
+      200,
+      0,
+      200
+    ],
+    "name": "Warm-summer continental Mediterranean",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry summer, warm summer",
+    "description": "Warm, dry summers and snowy or cold winters. Elevation or latitude keeps summer heat below the hot-summer subtype.",
+    "examples": "Rocky Mountains, Sierra Nevada, eastern Turkey highlands, parts of Iran"
+  },
+  "19": {
+    "value": 19,
+    "code": "Dsc",
+    "rgb": [
+      150,
+      50,
+      150
+    ],
+    "name": "Cold-summer continental Mediterranean",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry summer, cold summer",
+    "description": "Short, cool, dry summers and long cold winters. This rare subtype is mostly found in high mountains near dry-summer climates.",
+    "examples": "High Sierra Nevada, high Rockies, highlands of eastern Turkey and Iran"
+  },
+  "20": {
+    "value": 20,
+    "code": "Dsd",
+    "rgb": [
+      150,
+      100,
+      150
+    ],
+    "name": "Very-cold continental Mediterranean",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry summer, very cold winter",
+    "description": "Dry summers combine with extremely cold winters. It is one of the rarest Koppen-Geiger classes and is mostly tied to severe high-elevation interiors.",
+    "examples": "High mountain interiors of eastern Siberia and Central Asia"
+  },
+  "21": {
+    "value": 21,
+    "code": "Dwa",
+    "rgb": [
+      170,
+      175,
+      255
+    ],
+    "name": "Hot-summer monsoon continental",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry winter, hot summer",
+    "description": "Hot summers, very cold winters, and a pronounced winter dry season. Most precipitation arrives in the warm season.",
+    "examples": "Northeastern China, Korean Peninsula interior, Russian Far East margins"
+  },
+  "22": {
+    "value": 22,
+    "code": "Dwb",
+    "rgb": [
+      90,
+      120,
+      220
+    ],
+    "name": "Warm-summer monsoon continental",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry winter, warm summer",
+    "description": "Warm summers, cold winters, and dry winters. It often appears in uplands or higher-latitude monsoon-influenced interiors.",
+    "examples": "Northeastern China uplands, North Korea highlands, parts of Siberia and Mongolia"
+  },
+  "23": {
+    "value": 23,
+    "code": "Dwc",
+    "rgb": [
+      75,
+      80,
+      180
+    ],
+    "name": "Subarctic monsoon",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry winter, cold summer",
+    "description": "Short, cool summers and long cold winters with a strong winter dry season. It is common in severe continental interiors influenced by seasonal pressure systems.",
+    "examples": "Eastern Siberia, Russian Far East interior, northern Mongolia"
+  },
+  "24": {
+    "value": 24,
+    "code": "Dwd",
+    "rgb": [
+      50,
+      0,
+      135
+    ],
+    "name": "Extreme subarctic monsoon",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "Dry winter, very cold winter",
+    "description": "Very long, intensely cold winters and brief cool summers, with winters also being dry. This is among the coldest inhabited climate settings.",
+    "examples": "Yakutia, Verkhoyansk region, Oymyakon region, interior eastern Siberia"
+  },
+  "25": {
+    "value": 25,
+    "code": "Dfa",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "name": "Hot-summer humid continental",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "No dry season, hot summer",
+    "description": "Hot summers, cold winters, and precipitation in all seasons. Seasonal contrasts are strong, with both summer heat and winter freezes.",
+    "examples": "US Midwest, lower Great Lakes, Balkans, Ukraine, NE China margins"
+  },
+  "26": {
+    "value": 26,
+    "code": "Dfb",
+    "rgb": [
+      55,
+      200,
+      255
+    ],
+    "name": "Warm-summer humid continental",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "No dry season, warm summer",
+    "description": "Warm summers, cold winters, and year-round precipitation. Snow is common in winter and summers are moderate rather than hot.",
+    "examples": "Southern Canada, northern US, central Europe, southern Scandinavia, western Russia"
+  },
+  "27": {
+    "value": 27,
+    "code": "Dfc",
+    "rgb": [
+      0,
+      125,
+      125
+    ],
+    "name": "Subarctic",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "No dry season, cold summer",
+    "description": "Long, cold winters and short, cool summers with precipitation in all seasons. Forests and boreal landscapes commonly dominate.",
+    "examples": "Interior Alaska, Canada boreal forest, Scandinavia interior, Siberia"
+  },
+  "28": {
+    "value": 28,
+    "code": "Dfd",
+    "rgb": [
+      0,
+      70,
+      95
+    ],
+    "name": "Extreme subarctic",
+    "group": "Continental",
+    "groupCode": "D",
+    "groupDescription": "No dry season, very cold winter",
+    "description": "Extremely cold winters, short cool summers, and no dry season. It is concentrated in the harshest continental interiors.",
+    "examples": "Eastern Siberia, Yakutia, high-latitude interior Russia"
+  },
+  "29": {
+    "value": 29,
+    "code": "ET",
+    "rgb": [
+      178,
+      178,
+      178
+    ],
+    "name": "Tundra",
+    "group": "Polar",
+    "groupCode": "E",
+    "groupDescription": "Tundra",
+    "description": "The warmest month stays above 0 C but below 10 C, limiting tree growth. Vegetation is dominated by tundra, mosses, lichens, and low shrubs.",
+    "examples": "Arctic coastlines, Greenland margins, Antarctic Peninsula, high alpine zones"
+  },
+  "30": {
+    "value": 30,
+    "code": "EF",
+    "rgb": [
+      102,
+      102,
+      102
+    ],
+    "name": "Ice cap",
+    "group": "Polar",
+    "groupCode": "E",
+    "groupDescription": "Frost",
+    "description": "All months average below 0 C, so permanent ice or snow can persist. Liquid-water growing seasons are effectively absent.",
+    "examples": "Interior Greenland, Antarctica, highest Himalayan and Andean ice fields"
+  }
+}
